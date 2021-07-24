@@ -17,6 +17,22 @@
     "Snippets"
   ],
   "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Jasmine code snippets configuration",
+      "properties": {
+        "jasmineSnippets.quoteStyle": {
+          "type": "string",
+          "enum": [
+            "'",
+            "\"",
+            "`"
+          ],
+          "default": "`",
+          "description": "Code snippets quote style"
+        }
+      }
+    },
     "snippets": [
       {
         "language": "javascript",
