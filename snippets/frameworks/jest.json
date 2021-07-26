@@ -1,0 +1,146 @@
+{
+    "afterAllTimeout": {
+		"prefix": "aat",
+		"body": "afterAll(function() {\n\t$0\n}, 5);",
+		"description": "afterAll function with timeout is called once after the full spec runs",
+		"scope": "source.js"
+	},
+    "afterEachTimeout": {
+		"prefix": "aet",
+		"body": "afterEach(function() {\n\t$0\n}, 5);",
+		"description": "afterEach function with timeout is called once after each spec",
+		"scope": "source.js"
+	},
+    "beforeAllTimeout": {
+		"prefix": "bat",
+		"body": "beforeAll(function() {\n\t$0\n}, 5);",
+		"description": "beforeAll function with timeout is called once before the full spec runs",
+		"scope": "source.js"
+	},
+    "beforeEachTimeout": {
+		"prefix": "bet",
+		"body": "beforeEach(function() {\n\t$0\n}, 5);",
+		"description": "beforeEach function with timeout is called once before each spec",
+		"scope": "source.js"
+	},
+    "describeEach": {
+		"prefix": "desce",
+		"body": "describe.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use describe.each if you keep duplicating the same test suites with different data",
+		"scope": "source.js"
+	},
+    "describeOnly": {
+		"prefix": "desco",
+		"body": "describe.only('{$0:name}', function () {\n\t$1\n});",
+		"description": "You can use describe.only if you want to run only one describe block",
+		"scope": "source.js"
+	},
+    "describeOnlyEach": {
+		"prefix": "desceo",
+		"body": "describe.only.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use describe.only.each if you want to only run specific tests suites of data driven tests.",
+		"scope": "source.js"
+	},
+    "describeSkip": {
+		"prefix": "descsk",
+		"body": "describe.skip('{$0:name}', function () {\n\t$1\n});",
+		"description": "You can use describe.skip if you do not want to run a particular describe block",
+		"scope": "source.js"
+	},
+    "describeSkipEach": {
+		"prefix": "descse",
+		"body": "describe.skip.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use describe.skip.each if you want to stop running a suite of data driven tests.",
+		"scope": "source.js"
+	},
+    "expect": {
+		"prefix": "exp",
+		"body": "expect($1)$0",
+		"description": "takes a value, called the actual.",
+		"scope": "source.js"
+	},
+    "expectExtend": {
+		"prefix": "expe",
+		"body": "expect.extend({$0});",
+		"description": "You can use expect.extend to add your own matchers to Jest.",
+		"scope": "source.js"
+	},
+    "expectAnything": {
+		"prefix": "expat",
+		"body": "expect.anything();",
+		"description": "expect.anything() matches anything but null or undefined",
+		"scope": "source.js"
+	},
+    "expectAny": {
+		"prefix": "expa",
+		"body": "expect.any({$1:constructor})$0",
+		"description": "expect.any(constructor) matches anything that was created with the given constructor.",
+		"scope": "source.js"
+	},
+    "expectArrayContaining": {
+		"prefix": "exparr",
+		"body": "expect.arrayContaining({$1:arr})$0",
+		"description": "expect.arrayContaining(array) matches a received array which contains all of the elements in the expected array.",
+		"scope": "source.js"
+	},
+    "itOnly": {
+		"prefix": "ito",
+		"body": "it.only('{$0:name}', function () {\n\t$1\n});",
+		"description": "When you are debugging a large test file, you will often only want to run a subset of tests. You can use .only to specify which tests are the only ones you want to run in that test file.",
+		"scope": "source.js"
+	},
+    "itSkip": {
+		"prefix": "itsk",
+		"body": "it.skip('${1:should behave...}', function() {\n\t$0\n});",
+		"description": "If you want to skip running this test, but you don't want to delete this code, you can use test.skip to specify some tests to skip.",
+		"scope": "source.js"
+	},
+    "test": {
+		"prefix": "te",
+		"body": "test('${1:should behave...}', function() {\n\t$0\n});",
+		"description": "creates a test method",
+		"scope": "source.js"
+	},
+	"testAsync": {
+		"prefix": "tea",
+		"body": "test('${1:should behave asynchronously...}', async function() {\n\t$0\n});",
+		"description": "creates an async test method",
+		"scope": "source.js"
+	},
+    "testEach": {
+		"prefix": "tee",
+		"body": "test.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use test.each if you keep duplicating the same test with different data. test.each allows you to write the test once and pass data in.",
+		"scope": "source.js"
+	},
+    "testOnly": {
+		"prefix": "teo",
+		"body": "test.only('{$0:name}', function () {\n\t$1\n});",
+		"description": "When you are debugging a large test file, you will often only want to run a subset of tests. You can use .only to specify which tests are the only ones you want to run in that test file.",
+		"scope": "source.js"
+	},
+    "testOnlyEach": {
+		"prefix": "teoe",
+		"body": "test.only.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use test.only.each if you want to only run specific tests with different test data.",
+		"scope": "source.js"
+	},
+    "testSkip": {
+		"prefix": "tsk",
+		"body": "test.skip('${1:should behave...}', function() {\n\t$0\n});",
+		"description": "If you want to skip running this test, but you don't want to delete this code, you can use test.skip to specify some tests to skip.",
+		"scope": "source.js"
+	},
+    "testSkipEach": {
+		"prefix": "tske",
+		"body": "test.skip.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use test.skip.each if you want to stop running a collection of data driven tests.",
+		"scope": "source.js"
+	},
+    "testToDo": {
+		"prefix": "ttodo",
+		"body": "test.todo('{$0:should behave...}');",
+		"description": "Use test.skip.each if you want to stop running a collection of data driven tests.",
+		"scope": "source.js"
+	}
+}
